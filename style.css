@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered container */
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Input styling */
+.searchBox input {
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+}
+
+/* Button styling */
+.searchBox button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button hover effect */
+.searchBox button:hover {
+    background-color: #777;
+}
+
+/* Weather panel styling */
+.weatherPanel {
+    margin-top: 20px;
+    padding: 15px;
+    width: 300px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}

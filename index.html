@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Weather Flare</title>
 </head>
 <body>
     <div class="searchBox">
-        <input type="text" name="q"
-            hx-get="/searchCity"
-            hx-trigger="keyup:enter"
-            hx-target="#search-results"
-            placeholder="Search...">
-        <button type="button" hx-get="/searchCity" hx-trigger="click" hx-target="#search-results">
-            <img src="path/to/search-icon.png" alt="Search Icon">
+        <input 
+          type="text" 
+          id="cityInput" 
+          placeholder="Enter city name" 
+          hx-get="/searchCity" 
+          hx-target="#search-results" 
+          hx-swap="innerHTML" 
+          hx-trigger="keyup[enter]" 
+        />
+        <button 
+          hx-get="/searchCity" 
+          hx-target="#search-results" 
+          hx-swap="innerHTML" 
+        >
+          Search
         </button>
-    </div>
-    <div class="weatherPanel">
-        <div id="search-results"></div>
-    </div>
+      </div>
+      
+      <div class="weatherPanel">
+        <div id="search-results">
+
+        </div>
+      </div>
 </body>
 </html>
