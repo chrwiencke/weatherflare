@@ -8,7 +8,7 @@
     <title>Weather Flare</title>
 </head>
 <body>
-    <form class="searchBox" hx-get="https://get-weather-from-openweatherapi-then-return-html.pludo.workers.dev" hx-target="#search-results" hx-swap="innerHTML">
+    <form class="searchBox" hx-get="/searchCity" hx-target="#search-results" hx-swap="innerHTML">
         <input 
           type="text" 
           name="cityInput" 
