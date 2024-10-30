@@ -8,26 +8,16 @@
     <title>Weather Flare</title>
 </head>
 <body>
-    <div class="searchBox">
+    <form class="searchBox" hx-get="/searchCity" hx-target="#search-results" hx-swap="innerHTML">
         <input 
           type="text" 
-          id="cityInput" 
-          name="city" 
+          name="cityInput" 
           placeholder="Enter city name" 
           hx-trigger="keyup[enter]" 
-          hx-get="/searchCity?cityInput={cityInput.value}" 
-          hx-target="#search-results" 
-          hx-swap="innerHTML" 
         />
-        <button 
-          hx-get="/searchCity?cityInput={cityInput.value}" 
-          hx-target="#search-results" 
-          hx-swap="innerHTML" 
-        >
-          Search
-        </button>
-      </div>
-          
+        <button type="submit">Search</button>
+      </form>
+              
       <div class="weatherPanel">
         <div id="search-results">
 
