@@ -12,21 +12,22 @@
         <input 
           type="text" 
           id="cityInput" 
+          name="city" 
           placeholder="Enter city name" 
-          hx-get="/searchCity" 
+          hx-trigger="keyup[enter]" 
+          hx-get="/searchCity?cityInput={cityInput.value}" 
           hx-target="#search-results" 
           hx-swap="innerHTML" 
-          hx-trigger="keyup[enter]" 
         />
         <button 
-          hx-get="/searchCity" 
+          hx-get="/searchCity?cityInput={cityInput.value}" 
           hx-target="#search-results" 
           hx-swap="innerHTML" 
         >
           Search
         </button>
       </div>
-      
+          
       <div class="weatherPanel">
         <div id="search-results">
 
