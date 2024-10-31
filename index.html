@@ -9,18 +9,18 @@
     <title>Weather Flare</title>
 </head>
 <body>
-    <form class="searchBox" hx-get="/searchCity" hx-target="#search-results" hx-swap="innerHTML">
-        <input 
-            type="text" 
-            name="cityInput" 
-            placeholder="Enter city name" 
-            hx-trigger="keyup[enter]" 
-        />
-        <button type="submit">Search</button>
-    </form>
+        <form class="searchBox" hx-get="/searchCity" hx-target="#search-results" hx-swap="innerHTML">
+            <input 
+                type="text" 
+                name="cityInput" 
+                placeholder="Enter city name" 
+                hx-trigger="keyup[enter]" 
+            />
+            <button type="submit">Search</button>
+        </form>
 
-    <div class="weatherPanel">
-        <div id="search-results"></div>
-    </div>
+        <div class="weatherPanel">
+            <div id="search-results"></div>
+        </div>    
 </body>
 </html>

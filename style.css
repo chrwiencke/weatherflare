@@ -2,8 +2,6 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
 }
 
 .searchBox {
@@ -13,7 +11,9 @@ body {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     justify-content: center;
+    align-items: center;
     margin: 0;
+    margin-top: 15vh;
 }
 
 .searchBox input {
